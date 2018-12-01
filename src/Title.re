@@ -2,7 +2,7 @@
 
 
 
-let component = ReasonReact.statelessComponent("TodoApp");
+let component = ReasonReact.statelessComponent("Title");
 
 let make = _children => {
   ...component,

@@ -22,5 +22,6 @@ let make = _children => {
       render: _self =>
         <div className="app">
          <Title />
+         <EventTracking />
         </div> ,
 };
