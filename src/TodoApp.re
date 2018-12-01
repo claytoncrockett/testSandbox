@@ -1,3 +1,5 @@
+
+[% bs.raw {| require('../public/mystyle.css') |}];
 let component = ReasonReact.statelessComponent("TodoApp");
 
 let make = _children => {
@@ -5,8 +7,7 @@ let make = _children => {
   render: _self =>
     <div className="app">
       <div className="title">
-        (ReasonReact.stringToElement("Hello CodeSandbox"))
+        (ReasonReact.stringToElement("Clayton Crockett"))
       </div>
-      <div className="items"> (ReasonReact.stringToElement("I should try Reason")) </div>
     </div>,
 };

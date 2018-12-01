@@ -1,0 +1,11 @@
+#root {
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.title,
+.app {
+  color: blue;
+}
