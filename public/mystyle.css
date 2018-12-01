@@ -1,11 +1,21 @@
-#root {
-  text-align: center;
-  width: 100vw;
+.title {
   display: flex;
   justify-content: center;
+  color: blue;
+  font-size: 4vw;
+  letter-spacing: 5vw;
+  line-height: 0;
+  margin: 0;
 }
 
-.title,
-.app {
-  color: blue;
+.letters {
+  position: relative;
+  cursor: default;
+  bottom: 0;
+  transition: bottom 1s ease;
+}
+
+.letters:hover {
+  bottom: 50px;
+  transition: bottom 1s ease;
 }

@@ -1,11 +1,10 @@
-[% bs.raw {| require('../public/mystyle.css') |}];
 
 type state = {
   count: int,
   hover: bool,
 };
 
-type action = 
+type action =
   | Hover;
 
 let component = ReasonReact.reducerComponent("TodoApp");
@@ -13,17 +12,15 @@ let component = ReasonReact.reducerComponent("TodoApp");
 let make = _children => {
   ...component,
 
-  initialState: () => {count: 0, hover: false},
+  initialState: () => { count: 0, hover: false },
 
-  reducer: (action, state) =>
+    reducer: (action, state) =>
     switch (action) {
-    | Hover => ReasonReact.Update({...state, hover: !state.hover})
-  },
+    | Hover => ReasonReact.Update({ ...state, hover: !state.hover })
+    },
 
-  render: _self =>
-    <div className="app">
-      <div className="title">
-        (ReasonReact.stringToElement("Clayton Crockett"))
-      </div>
-    </div>,
+      render: _self =>
+        <div className="app">
+         <Title />
+        </div> ,
 };
